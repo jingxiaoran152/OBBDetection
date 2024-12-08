@@ -67,7 +67,7 @@ test_pipeline = [
 # uncomments it when use trainval as train
 data = dict(
     samples_per_gpu=2, # 每张 GPU 的 batch_size
-    workers_per_gpu=4, # 每张 GPU 的数据加载线程数
+    workers_per_gpu=4, # 每张 GPU 的 number_workers
     train=dict(
         type=dataset_type,
         task='Task1',
